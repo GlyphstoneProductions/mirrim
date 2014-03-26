@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+#wrap {
+	width : 750px ;
+	margin : 0 auto ;
+	background : #99c000;
+}
+
+#header {
+	background: #ddd;
+}
+
+#nav {
+	background: #c99 ;
+	
+}
+
+#main {
+	float:left;
+	width : 500px;
+	background: #9c9 ;
+	
+}
+
+#sidebar {
+	float: right;
+	width: 250px;
+	background : #99c000;
+}
+
+#footer {
+	clear: both;
+	background: #cc9;
+}

@@ -1,0 +1,128 @@
+@CHARSET "UTF-8";
+
+#page {
+	width: 100%;
+	height: 1200 ;
+	margin: 0px 0px 0px 0px;
+	
+}
+
+.banner_img {
+	display: block ;
+	width: 365px;
+	height: 73px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+
+	width: 1200px ;
+	margin-top: 20px ;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+}
+
+body {
+	width: 100% ;
+	margin: 0px 0px 0px 0px;
+	background-color: #ffffff;
+	font-family: Verdana, Geneva, sans-serif ;
+		background-image: url('../images/background.jpg') ;
+	background-repeat: repeat;
+}
+
+#fibonacci {
+	margin: auto ;
+	max-width: 1200px;
+	min-width: 1200px;
+	height: 750px ;
+	background: #ffcd74;
+}
+
+.fibblock {
+
+	margin: 5px 5px 5px 5px;
+}
+
+
+.fibcontainer {
+	border-style: dotted solid;
+	border-width:1px;
+	position: relative ;
+	display: inline-block;	
+}
+
+
+#gallery {
+	float: left ;
+	width: 720px;
+	height: 720px;
+	background: #512a5d;
+	display: inline-block;
+	padding: 10px ;
+
+}
+
+
+#fib-1-4 {
+	float: right ;
+	width: 450px;
+	height: 750px;
+}
+
+#fib-1-3 {
+	width: 450px;
+	height:300px;
+}
+
+#blog {
+	width:430px ;
+	height:430px ;
+	padding: 5px;
+	background: #d2892c ;
+
+}
+
+#fib-1-2 {
+	float:left;
+	width: 150px;
+	height: 300px;
+}
+
+#prod {
+	float: right;
+	width: 280px;
+	height: 280px;
+	padding: 5px;
+	background: #875e81;
+}
+
+#contact {
+	
+	margin: 5px 5px 5px 5px;
+	padding: 5px;
+	width: 130px;
+	height:130px;
+	background : #b18544;
+}
+
+#about {
+	margin: 10px 5px 5px 5px;
+	padding: 5px;
+	width: 130px;
+	height:130px;
+	background : #512a5d;	
+}
+
+
+
+
+#footer {
+	max-height: 100px;
+	display: block;
+	text-align:center
+	
+}
