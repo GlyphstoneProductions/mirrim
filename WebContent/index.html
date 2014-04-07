@@ -6,6 +6,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/responsive1.css" />
+	<link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
 	<title>Mirrim 3D Portraits</title>
 </head>
 <body>
@@ -16,20 +18,27 @@
 			<div id="share"></div>
 		</div>
 		<div id="fibonacci">
-			<div class="fibblock" id="gallery">
+			<div class="fibblock" id="gallery" title="View our photo gallery" >
 				<img src="images/breanna_mirror.png" width=720 height=720 />
 			</div>
 			<div id="fib-1-4">
 			   <div id="fib-1-3">
 			   		<div id="fib-1-2" >
-			   			<div id="contact">contact</div>
-			   			<div id="about">about us</div>
+			   			<div id="contact" title="Contact us"  ></div>
+			   			<div id="about" title="More about us"></div>
 			   		</div>
-			   		<div class="fibblock" id="prod">Products</div>
+			   		<div class="fibblock" id="prod" title="Our products & services"></div>
 			   </div>
-			   <div class="fibblock" id="blog">blog here</div>
+			   <div class="fibblock" id="blog" title="What we are up to lately" >
+			       <div id="blogtitle"></div>
+			       <div id="blogbody"></div>
+			   </div>
 			</div>
 		</div>
 	</div>
+	
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.js"></script>
+	<script src="js/mirrim.js"></script>
 </body>
 </html>

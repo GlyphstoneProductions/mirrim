@@ -34,6 +34,14 @@ body {
 	background-repeat: repeat;
 }
 
+.font_informal {
+	font-family: 'Swanky and Moo Moo', cursive;
+}
+
+.ui-tooltip-content {
+	font-family: 'Swanky and Moo Moo', cursive;	
+}
+
 #fibonacci {
 	margin: auto ;
 	max-width: 1200px;
@@ -81,9 +89,27 @@ body {
 #blog {
 	width:430px ;
 	height:430px ;
-	padding: 5px;
+	padding: 8px;
 	background: #d2892c ;
+	overflow: hidden;
 
+}
+
+#blogtitle {
+	font-family: 'Swanky and Moo Moo', cursive;	
+	font-size: 2.0em;
+	line-height: 100%;
+	text-align: center;
+}
+
+#blogbody {
+	font-size: 0.9em;
+}
+
+#blogbody img {
+	max-height: 175px;
+	width: auto;
+	float: left;
 }
 
 #fib-1-2 {

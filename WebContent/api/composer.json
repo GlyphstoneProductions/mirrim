@@ -1,0 +1,8 @@
+{
+  "name": "Mirrim/webutils",
+  "description": "REST json API for service call proxys and other server side utilities",
+    "require": {
+        "slim/slim": "2.*",
+        "guzzle/guzzle" : "~3.7"
+    }
+}
