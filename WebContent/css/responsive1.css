@@ -30,7 +30,7 @@ body {
 	margin: 0px 0px 0px 0px;
 	background-color: #ffffff;
 	font-family: Verdana, Geneva, sans-serif ;
-		background-image: url('../images/background.jpg') ;
+	background-image: url('../images/background.jpg') ;
 	background-repeat: repeat;
 }
 
@@ -55,6 +55,17 @@ body {
 	margin: 5px 5px 5px 5px;
 }
 
+.link-icon-box {
+	width: 25;
+	height: 25;
+	background: #ffcd74;
+	display: inline;
+	position: relative;
+	left:1px;
+	top:1px;
+	z-index: 1;
+	float: left;
+}
 
 .fibcontainer {
 	border-style: dotted solid;
@@ -63,6 +74,9 @@ body {
 	display: inline-block;	
 }
 
+.linkable {
+	cursor: pointer;
+}
 
 #gallery {
 	float: left ;
@@ -100,6 +114,8 @@ body {
 	font-size: 2.0em;
 	line-height: 100%;
 	text-align: center;
+	display: block ;
+
 }
 
 #blogbody {

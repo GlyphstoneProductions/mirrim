@@ -29,7 +29,7 @@ Mirrim.prototype.initialize = function(first) {
 } ;
 
 Mirrim.prototype.toAboutUs = function() {
-	console.log("Go to about us page") ;
+	console.log("Go to about us page") ;http://blog.mirrim3d.com/node/9
 	window.location.href = "http://blog.mirrim3d.com/about" ;
 } ;
 
