@@ -9,11 +9,12 @@
 
 .banner_img {
 	display: block ;
-	width: 365px;
-	height: 73px;
+	width: 436px;
+	height: 106px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 
 #header {
 
@@ -59,11 +60,10 @@ body {
 	width: 25;
 	height: 25;
 	background: #ffcd74;
-	display: inline;
 	position: relative;
 	left:1px;
 	top:1px;
-	z-index: 1;
+	z-index: 2;
 	float: left;
 }
 
@@ -101,10 +101,10 @@ body {
 }
 
 #blog {
-	width:430px ;
-	height:430px ;
+	width:425px ;
+	height:425px ;
 	padding: 8px;
-	background: #d2892c ;
+	background: #d59d54 ;
 	overflow: hidden;
 
 }
@@ -145,10 +145,21 @@ body {
 #contact {
 	
 	margin: 5px 5px 5px 5px;
-	padding: 5px;
+	padding: 5px ;
 	width: 130px;
 	height:130px;
-	background : #b18544;
+	background : #512a5d;
+}
+
+#contact-icon {
+	width : 90px;
+	height : 90px;
+	position: relative;
+	margin-top: 20px ;
+	margin-left: auto;
+	margin-right: auto;
+	left: 5px;
+
 }
 
 #about {
@@ -156,15 +167,26 @@ body {
 	padding: 5px;
 	width: 130px;
 	height:130px;
-	background : #512a5d;	
+	background : #c98752;	
+}
+
+#about-icon {
+	width : 110px;
+	height : 110px;
+	position: relative;
+	margin-top: 10px ;
+	margin-left: auto;
+	margin-right: auto;
+	left: -8px;
+
 }
 
 
-
-
 #footer {
-	max-height: 100px;
+	min-height: 100px;
 	display: block;
-	text-align:center
+	text-align:center ;
+	position:relative;
+	top: 30px;
 	
 }

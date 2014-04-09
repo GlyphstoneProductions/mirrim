@@ -24,6 +24,8 @@ Mirrim.prototype.initialize = function(first) {
     		}
     ) ; 
     
+    this.initGallery();
+    
     this.getBlogPost() ;
     
 } ;
@@ -38,6 +40,13 @@ Mirrim.prototype.toContactUs = function() {
 	window.location.href = "http://blog.mirrim3d.com/contactus" ;
 } ;
 
+
+Mirrim.prototype.initGallery = function() {
+	  jQuery('#slider').slippry({ 
+		  "speed": 4000
+		}) ;
+
+}
 
 Mirrim.prototype.getBlogPost = function() {
 	

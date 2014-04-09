@@ -5,47 +5,63 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/responsive1.css" />
+	<link href="css/responsive1.css" rel="stylesheet"  />
 	<link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+	<link href="css/slippry.css"  rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
 	<title>Mirrim 3D Portraits</title>
 </head>
 <body>
 	<div id="page">
 		<div id="header">
-			<img class="banner_img" src="images/mirrimlogo_noback.png" alt="Mirrim 3D Portraits" />
-			<div id="subtitle">3D Portaits</div>
+			<img class="banner_img" src="images/mirrimlogo_webbanner.png" alt="Mirrim 3D Portraits" />
 			<div id="share"></div>
 		</div>
 		<div id="fibonacci">
-			<div class="fibblock" id="gallery" title="View our photo gallery" >
-				<img src="images/breanna_mirror.png" width=720 height=720 />
+			<div class="fibblock" id="gallery" >
+
+			    <ul id="slider">
+	   				<li><a href="#pic1" ><img src="images/breanna_mirror.png" /></a></li>
+	 				<li><a href="#pic2" ><img src="images/momnbre_jungle1.png"  /></a></li>
+					<li><a href="#pic3" ><img src="images/lill1.png"  /></a></li>
+					<li><a href="#pic4" ><img src="images/ryanbust.png" /></a></li>	
+				</ul>
+									
 			</div>
 			<div id="fib-1-4">
 			   <div id="fib-1-3">
 			   		<div id="fib-1-2" >
 			   			<div id="contact" class="linkable" title="Contact us"  >
-			   				<a href="http://blog.mirrim3d.com/contactus"><div class="link-icon-box ui-icon ui-icon-extlink"></div></a>
+			   				<a href="http://blog.mirrim3d.com/contactus"><div class="link-icon-box ui-icon ui-icon-link"></div></a>
+			   				<img id="contact-icon" src="images/contact.png"/>
 			   			</div>
 			   			<div id="about" class="linkable" title="More about us">
-			   				<a href="http://blog.mirrim3d.com/about"><div class="link-icon-box ui-icon ui-icon-extlink"></div></a>
+			   				<a href="http://blog.mirrim3d.com/about"><div class="link-icon-box ui-icon ui-icon-link"></div></a>
+			   				<img id="about-icon" src="images/maggievase_sm.png"/>
 			   			</div>
 			   		</div>
 			   		<div class="fibblock" class="linkable" id="prod" title="Our products & services">
-			   		    <a href="http://blog.mirrim3d.com/products"><div class="link-icon-box ui-icon ui-icon-extlink"></div></a>
+			   		    <a href="http://blog.mirrim3d.com/products"><div class="link-icon-box ui-icon ui-icon-link"></div></a>
 			   		</div>
 			   </div>
 			   <div class="fibblock" id="blog" title="What we are up to lately" >
-			       <a href="http://blog.mirrim3d.com/blog/3"><div class="link-icon-box ui-icon ui-icon-extlink"></div></a>
+			       <a href="http://blog.mirrim3d.com/blog/3"><div class="link-icon-box ui-icon ui-icon-link"></div></a>
 			       <div id="blogtitle"></div>
 			       <div id="blogbody"></div>
 			   </div>
+			</div>
+			<div id="footer">
+			    Copyright 2014, Glyphstone Productions. All rights reserved | info@mirrim3d.com<br/>
+			    <a href="http://blog.mirrim3d.com/about">About Mirrim</a> | <a href="http://blog.mirrim3d.com/contactus">Contact Us</a> | 
+			    <a href="http://blog.mirrim3d.com/products">Products</a> | <a href="http://blog.mirrim3d.com/blog/3">Blog</a>
+			    
 			</div>
 		</div>
 	</div>
 	
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/slippry.min.js"></script>
 	<script src="js/mirrim.js"></script>
 </body>
 </html>
