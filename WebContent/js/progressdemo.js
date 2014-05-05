@@ -70,11 +70,12 @@ function init() {
     var floorGeometry = new THREE.PlaneGeometry( 10, 10 );
 		floorGeometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
 
-    var oakTexture = new THREE.ImageUtils.loadTexture("models/parquet_rustic_oak.jpg");
-    oakTexture.wrapS = oakTexture.wrapT = THREE.MirroredRepeatWrapping ;
-    oakTexture.repeat.x = 4 ;
-    oakTexture.repeat.y = 4 ;
-    var floorMaterial = new THREE.MeshPhongMaterial( { map: oakTexture, shininess: 50 } );
+    // var oakTexture = new THREE.ImageUtils.loadTexture("models/parquet_rustic_oak.jpg");
+    var floorTexture = new THREE.ImageUtils.loadTexture("images/squareimage.png" ) ;
+    floorTexture.wrapS = floorTexture.wrapT = THREE.MirroredRepeatWrapping ;
+    floorTexture.repeat.x = 1 ;
+    floorTexture.repeat.y = 1 ;
+    var floorMaterial = new THREE.MeshPhongMaterial( { map: floorTexture, shininess: 60 } );
 
 		plane = new THREE.Mesh( floorGeometry, floorMaterial );
     //plane.receiveShadow = true ;
@@ -82,6 +83,7 @@ function init() {
     // load in the mesh and add it to the scene
 
     var mapUrl = "models/mahaboweb_uvmap.png";
+
     var map = THREE.ImageUtils.loadTexture(mapUrl, THREE.UVMapping);
     //map.flipY = false ;
      console.log( "map flipY: " + map.flipY) ;
