@@ -7,6 +7,7 @@
   var renderer;
   var model ;
   var controls ;
+  var progressDiv ;
 
   init();
   animate();
@@ -21,7 +22,13 @@ function init() {
     console.log( "Width: " + WIDTH + "  Height: " + HEIGHT) ;
     renderer = new THREE.WebGLRenderer({antialias:true});
     renderer.setSize(WIDTH, HEIGHT);
-    document.body.appendChild(renderer.domElement);
+    //var canvas = $("#3dcanvas").get(0);
+    // document.body.appendChild(renderer.domElement);
+    var canvas = document.getElementById("3dcanvas") ;
+    progressDiv = document.getElementById("progress");
+
+    canvas.appendChild(renderer.domElement);
+
     // create and place camera
     camera = new THREE.PerspectiveCamera(70, WIDTH / HEIGHT, 0.1, 20000);
     camera.position.set(0,5,8);
@@ -83,24 +90,14 @@ function init() {
 
   	var callbackProgress = function( progress, result ) {
 
-      console.log( "Loading progres...");
-        console.log( JSON.stringify( progress));
-      console.log( JSON.stringify( result));
-        /*
-					var bar = 250,
-						total = progress.totalModels + progress.totalTextures,
-						loaded = progress.loadedModels + progress.loadedTextures;
+        var message = "Loading..." ;
+        if ( progress.total ) {
+          message += ( 100 * progress.loaded / progress.total ).toFixed(0) + "%";
+        } else {
+          message += ( progress.loaded / 1000 ).toFixed(2) + " KB";
+        }
 
-					if ( total )
-						bar = Math.floor( bar * loaded / total );
-
-					$( "bar" ).style.width = bar + "px";
-
-					count = 0;
-					for ( var m in result.materials ) count++;
-
-					handle_update( result, Math.floor( count/total ) );
-          */
+        progressDiv.innerHTML = message;
 
 		}
 
