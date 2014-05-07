@@ -160,8 +160,35 @@ body {
 #vizprogress {
   
   position: relative ;
-  z-axis: 101 ;
+  z-axis: 200 ;
   top: 100px;
+  width: 200px;
+  height: 30px ;
+  margin: auto;
+  text-align: center ;
+  background-color: #808080;
+  
+}
+
+#vizcanvas-popup {
+  display: inline ;
+  position: absolute ;
+  float: left;
+  top: 50px;
+  left: 50%;
+  margin-left: 300px;
+  z-axis: 10000 ;
+  width:260px; 
+  height:260px; 
+  background-color:#808080;
+  
+}
+
+#vizprogress2 {
+  
+  position: relative ;
+  z-axis: 10001 ;
+  top: 10px;
   width: 200px;
   height: 30px ;
   margin: auto;
