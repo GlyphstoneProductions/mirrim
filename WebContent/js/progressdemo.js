@@ -107,10 +107,11 @@ function init() {
 
      //loader.callbackProgress = callbackProgress ;
      // loader.load( "models/mahabo_final_flip.js", function(geometry){
-     loader.loadAjaxJSON( loader, "models/mahabo_final_flip.js", function(geometry){
+     loader.loadAjaxJSON( loader, "../models/mahabo_final_flip.js", function(geometry){
 
       model = new THREE.Mesh(geometry, material);
       geometry.computeBoundingBox();
+      
       var bbox = geometry.boundingBox ;
       console.log( "bbox: " + JSON.stringify(bbox) ) ;
       model.position.y = -(bbox.min.y);

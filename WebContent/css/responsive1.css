@@ -44,6 +44,7 @@ body {
 }
 
 #fibonacci {
+	position: relative;
 	margin: auto ;
 	max-width: 1200px;
 	min-width: 1200px;
@@ -135,6 +136,7 @@ body {
 }
 
 #prod {
+	position: relative;
 	float: right;
 	width: 280px;
 	height: 280px;
@@ -143,6 +145,29 @@ body {
 	font-family: 'Swanky and Moo Moo', cursive;	
 	color: #feeac7;
 	font-size: 1.2em;
+}
+
+#vizcanvas {
+  position: absolute ;
+  top: 15px;
+  left: 15px;
+  z-axis: 100 ;
+  width:260px; 
+  height:260px; 
+  background-color:#808080;
+}
+
+#vizprogress {
+  
+  position: relative ;
+  z-axis: 101 ;
+  top: 100px;
+  width: 200px;
+  height: 30px ;
+  margin: auto;
+  text-align: center ;
+  background-color: #808080;
+  
 }
 
 #contact {

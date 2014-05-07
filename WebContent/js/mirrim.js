@@ -1,6 +1,10 @@
+
+var mirrimviz ;
+
 function Mirrim() {
 
 	this.initialize(true);
+	animate() ;
 
 } 
 
@@ -28,7 +32,14 @@ Mirrim.prototype.initialize = function(first) {
     
     this.getBlogPost() ;
     
+    mirrimviz = new MirrimViz( "vizcanvas", "vizprogress", "models/mahabo_final_flip.js", "models/mahaboweb_uvmap.png", "images/squareimage.png");	
+    
 } ;
+
+function animate() {
+	mirrimviz.render() ;
+	window.requestAnimationFrame( animate ) ;
+}
 
 Mirrim.prototype.toAboutUs = function() {
 	console.log("Go to about us page") ;http://blog.mirrim3d.com/node/9

@@ -1,0 +1,95 @@
+{
+    "digest-params" : {
+		"end-date" : "2014-05-05 00:00:00",
+		"period" : "week",
+		"tokens" : [ "ntf.review, ntf.question, ntf.formum, ntf.comment, sub.review, sub.question, sub.forum, sub.video, sub.dr, sub.topic, pm" ],
+		"opts" : ["comment-last_data"]
+	},
+	"userdata" : [
+		{
+			"uid" : "112345",
+			"pm" : {{
+	"digest-params" : {
+		"end-date" : "2014-05-05 00:00:00",
+		"period" : "week",
+		"tokens" : [ "ntf.review, ntf.question, ntf.formum, ntf.comment, sub.review, sub.question, sub.forum, sub.video, sub.dr, sub.topic, pm ],
+		"opts" : ["comment-last_data"]
+	},
+	"userdata" : [
+		{
+			"uid" : "112345",
+			"pm" : {
+		        "count" : 2
+		     },
+			"sub.review" : [
+			    {
+			        "
+			    },
+			    {
+			    }
+			],
+			"ntf.forum" : [
+			],
+
+		},
+		{
+		    "uid" : "23456",
+		    "pm" : {
+		        "count" : 25
+		     },
+		     "ntf.comment" : [
+		     ]
+		}
+	]
+}
+		        "count" : 2
+		     },
+			"sub.review" : [
+			    {
+			        "id": 123345,
+                    "ttl" : "review title here. Lookup?",
+                    "drid" : 5555,
+                    "drname" : "dr name needed?",
+                    "tid" : 12,
+                    "upd" : 1,
+                    "cmt" : 2,
+                    "pht" : 1,
+                    "vid" : 1
+			    },
+                {
+     		        "id": 23446,
+                    "drid" : 5555,
+                    "tid" : 10,
+                    "cmt" : 4               
+                }
+			],
+            "sub.topic" : [
+                { 
+                    "tid" : 10,
+                    "rev-n" : 3,
+                    "rev-u" : 5,
+                    "que" : 5,
+                    "for" : 3,
+                    "vid" : 1,
+                    "pht" : 4,
+                    "dof" : 3
+                },
+                { "tid" : 12 
+                   "rev-n" : 2,
+                   "que" : 3,
+                   "pht" : 1
+                }
+            ]
+			"ntf.forum" : [
+			]
+		},
+		{
+		    "uid" : "23456",
+		    "pm" : {
+		        "count" : 25
+		     },
+		     "ntf.comment" : [
+		     ]
+		}
+	]
+}
