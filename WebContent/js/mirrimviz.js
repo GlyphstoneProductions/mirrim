@@ -1,4 +1,4 @@
-function MirrimViz( divid, progressid, modelpath, texturepath, floorpath) {
+function MirrimViz( divid, progressid, modelpath, texturepath, floorpath, canvasWidth, canvasHeight, scale) {
 
   this.scene ;
   this.camera;
@@ -7,11 +7,15 @@ function MirrimViz( divid, progressid, modelpath, texturepath, floorpath) {
   this.controls ;
   this.progressDiv ;
   this.canvas ;
-	this.initialize(divid, progressid, modelpath, texturepath, floorpath );
+
+    if( !scale ) {
+        scale = 1.0 ;
+    }
+	this.initialize(divid, progressid, modelpath, texturepath, floorpath, canvasWidth, canvasHeight, scale );
 
 }
 
-MirrimViz.prototype.initialize = function( divid, progressid, modelpath, texturepath, floorpath ) {
+MirrimViz.prototype.initialize = function( divid, progressid, modelpath, texturepath, floorpath, canvasWidth, canvasHeight, scale ) {
 
     console.log( "Initialize mirrimviz object at: " +  divid ) ;
 
@@ -23,10 +27,10 @@ MirrimViz.prototype.initialize = function( divid, progressid, modelpath, texture
     console.log( "canvas: " +  divid ) ;
     this.progressDiv = document.getElementById(progressid);
 
-    //var WIDTH  = canvas.style.width ;
-   //var HEIGHT = canvas.style.height;
-   var WIDTH = 260 ;
-   var HEIGHT = 260 ;
+    var WIDTH  = canvasWidth ;
+    var HEIGHT = canvasHeight;
+   //var WIDTH = 260 ;
+   //var HEIGHT = 260 ;
     console.log( "Width: " + WIDTH + "  Height: " + HEIGHT) ;
     this.renderer = new THREE.WebGLRenderer({antialias:true});
     this.renderer.setSize(WIDTH, HEIGHT);
@@ -69,7 +73,7 @@ MirrimViz.prototype.initialize = function( divid, progressid, modelpath, texture
     var floorGeometry = new THREE.PlaneGeometry( 10, 10 );
 		floorGeometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
 
-    var floorTexture = new THREE.ImageUtils.loadTexture("images/squareimage.png" ) ;
+    var floorTexture = new THREE.ImageUtils.loadTexture( floorpath ) ;
     floorTexture.wrapS = floorTexture.wrapT = THREE.MirroredRepeatWrapping ;
     floorTexture.repeat.x = 1 ;
     floorTexture.repeat.y = 1 ;
@@ -78,7 +82,8 @@ MirrimViz.prototype.initialize = function( divid, progressid, modelpath, texture
 		plane = new THREE.Mesh( floorGeometry, floorMaterial );
 		this. scene.add( plane );
 
-    var mapUrl = "models/mahaboweb_uvmap.png";
+    //var mapUrl = "models/mahaboweb_uvmap.png";
+    var mapUrl = texturepath ;
 
     var map = THREE.ImageUtils.loadTexture(mapUrl, THREE.UVMapping);
 
@@ -99,13 +104,17 @@ MirrimViz.prototype.initialize = function( divid, progressid, modelpath, texture
 
     var loader = new THREE.JSONLoader();
 
-    loader.loadAjaxJSON( loader, "models/mahabo_final_flip.js", function(geometry){
+    // loader.loadAjaxJSON( loader, "models/mahabo_final_flip.js", function(geometry){
+    loader.loadAjaxJSON( loader, modelpath, function(geometry){
+
        viz.progressDiv.style.visibility = "hidden" ;
        viz.model = new THREE.Mesh(geometry, material);
+       viz.model.scale.set( scale, scale, scale);
+
        geometry.computeBoundingBox();
        var bbox = geometry.boundingBox ;
        console.log( "bbox: " + JSON.stringify(bbox) ) ;
-       viz.model.position.y = -(bbox.min.y);
+       viz.model.position.y = -(bbox.min.y  * scale);
 
        viz.scene.add(viz.model);
 

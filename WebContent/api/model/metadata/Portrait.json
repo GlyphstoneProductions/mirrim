@@ -1,0 +1,56 @@
+{
+  "columns": {
+    "id": {
+      "label": "id",
+      "datatype": "INT",
+      "key": "1",
+      "update": false 
+    },
+    "user_id": {
+      "label": "user_id"
+    },
+    "created": {
+      "label": "created",
+      "datatype": "DATETIME"
+    },
+    "modified": {
+      "label": "modified",
+      "datatype": "DATETIME",
+      "update": true
+    },
+    "filepath": {
+      "label": "filepath"
+    },   
+    "shareable": {
+      "label": "shareable",
+      "datatype": "INT"
+    },
+    "browsable": {
+      "label": "browsable",
+      "datatype": "INT"
+    },
+    "forsale": {
+      "label": "forsale",
+      "datatype": "INT"
+    },
+    "saleterms": {
+      "label": "saleterms"
+    },
+    "name": {
+      "label": "name"
+    },
+    "notes": {
+      "label": "notes"
+    },
+    "urlalias": {
+      "label": "urlalias"
+    },
+    "status": {
+      "label": "status",
+      "datatype": "INT"
+    },
+    "image" : {
+       "label" : "image"
+    }
+  }
+}

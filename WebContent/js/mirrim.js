@@ -32,14 +32,17 @@ Mirrim.prototype.initialize = function(first) {
     
     this.getBlogPost() ;
     
-    mirrimviz = new MirrimViz( "vizcanvas", "vizprogress", "models/mahabo_final_flip.js", "models/mahaboweb_uvmap.png", "images/squareimage.png");	
+    mirrimviz = new MirrimViz( "vizcanvas", "vizprogress", "models/kathy_constantine_web.js", "models/kathy_web_uvmap.png", "images/squareimage.png", 260, 260, 3.2);
+    //mirrimviz = new MirrimViz( "vizcanvas", "vizprogress", "models/mahabo_final_flip.js", "models/mahaboweb_uvmap.png", "images/squareimage.png", 260, 260);
     
 } ;
+
 
 function animate() {
 	mirrimviz.render() ;
 	window.requestAnimationFrame( animate ) ;
 }
+
 
 Mirrim.prototype.toAboutUs = function() {
 	console.log("Go to about us page") ;http://blog.mirrim3d.com/node/9

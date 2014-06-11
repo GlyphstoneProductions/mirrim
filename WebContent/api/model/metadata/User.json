@@ -1,0 +1,77 @@
+{
+  "columns": {
+    "id": {
+      "label": "id",
+      "datatype": "INT",
+      "key": "1",
+      "update": false 
+    },
+    "username": {
+      "label": "username"
+    },
+    "email": {
+      "label": "email"
+    },
+    "first_name": {
+      "label": "firstname"
+    },
+    "last_name": {
+      "label": "lastname"
+    },
+    "timezone" : {
+      "label": "timezone"
+    },     
+    "company": {
+      "label": "company"
+    },   
+    "phone": {
+      "label": "phone"
+    },
+    "last_ip": {
+      "label": "lastip"
+    },
+    "last_login": {
+      "label": "last_login",
+      "datatype": "DATETIME"
+    },
+    "banned": {
+      "label": "banned",
+      "datatype": "INT"
+    },
+    "banned_reason": {
+      "label": "banned reason"
+    },
+    "password": {
+      "label": "password"
+    },
+    "salt": {
+      "label": "password salt"
+    },
+    "new_password_key": {
+      "label": "new password key"
+    },
+    "new_password_requested": {
+      "label": "new_password_requested",
+      "datatype": "DATETIME"
+    },
+    "new_email": {
+      "label": "new email"
+    },
+    "new_email_key": {
+      "label": "new_email key"
+    },
+    "created": {
+      "label": "created",
+      "datatype": "DATETIME"
+    },
+    "modified": {
+      "label": "modified",
+      "datatype": "DATETIME",
+      "update": true
+    },
+    "active": {
+      "label": "active",
+      "datatype": "INT"
+    }
+  }
+}
