@@ -32,7 +32,7 @@ MirrimViz.prototype.initialize = function( divid, progressid, modelpath, texture
    //var WIDTH = 260 ;
    //var HEIGHT = 260 ;
     console.log( "Width: " + WIDTH + "  Height: " + HEIGHT) ;
-    this.renderer = new THREE.WebGLRenderer({antialias:true});
+    this.renderer = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer: true });
     this.renderer.setSize(WIDTH, HEIGHT);
 
     this.canvas.appendChild(this.renderer.domElement);
@@ -151,3 +151,23 @@ MirrimViz.prototype.render = function() {
     	console.log( "this controls null " ) ;
     }
 }
+
+
+MirrimViz.prototype.captureFrame = function() {
+    var imgNode ;
+    var imgData ;
+
+    try {
+        imgData = this.renderer.domElement.toDataURL();
+        // console.log(imgData);
+    }
+    catch(e) {
+        console.log("Browser does not support taking screenshot of 3d context");
+        return null;
+    }
+    //imgNode = document.createElement("img");
+    //imgNode.src = imgData;
+    //document.body.appendChild(imgNode);
+    return imgData ;
+}
+

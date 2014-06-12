@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+
+#center {
+    position: relative;
+    margin: auto ;
+    max-width: 830px;
+    min-width: 830px;
+    min-height: 890px ;
+    background: #ffcd74;
+}
+
+#portrait_wrapper {
+    position: relative ;
+}
+
+#namebanner {
+    height: 40px;
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 2.0em;
+    line-height: 100%;
+    text-align: center;
+    display: block ;
+}
+
+#camera {
+    margin-left: 20px ;
+    margin-right: 100px;
+    padding: 4px;
+    width: 90%;
+    background: #d0a060;
+
+}
+
+#snapdiv {
+    position:absolute;
+    z-index: 100 ;
+    width: 830px ;
+    height: 875px;
+    background: #808080;
+    border-color: #404040;
+
+    left: 100px;
+    top: 100px;
+    display: none;
+}
+
+#snapdivhead {
+    margin: 10px;
+}
+#snapdiv-img {
+    margin: 10px;
+}
