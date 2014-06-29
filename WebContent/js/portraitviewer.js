@@ -22,7 +22,9 @@ PortraitViewer.prototype.initialize = function(first) {
         $('#snapdiv').hide() ;
     }) ;
 
-    mirrimviz = new MirrimViz( "vizcanvas", "vizprogress", "../models/kathy_constantine_web.js", "../models/kathy_web_uvmap.png", "../images/squareimage.png", 800, 800, 3.2);
+    // mirrimviz = new MirrimViz( "vizcanvas", "vizprogress", "../models/kathy_constantine_web.js", "../models/kathy_web_uvmap.png", "../images/squareimage.png", 800, 800, 3.2);
+
+    mirrimviz = new MirrimViz( "vizcanvas", "vizprogress", modelPath, modelTexture, "../images/squareimage.png", 800, 800, 3.2);
 
 } ;
 
